@@ -62,11 +62,42 @@
 
 
 
-var titles = document.querySelectorAll('.title');
-console.log(titles);
+// var titles = document.querySelectorAll('.title');
+// console.log(titles);
 
-var odd = document.querySelectorAll('li:nth-child(odd)');
+// var odd = document.querySelectorAll('li:nth-child(odd)');
 
-for(var i = 0; i < odd.length; i++) {
-    odd[i].style.background = 'green';
-}
+// for(var i = 0; i < odd.length; i++) {
+//     odd[i].style.background = 'green';
+// }
+
+
+
+var itemList = document.querySelector('#items');
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentNode.parentNode);
+
+
+
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentElement.parentElement);
+
+
+// console.log(itemList.children);
+// console.log(itemList.children[2]);
+// itemList.children[2].style.background = 'red';
+
+
+// console.log(itemList.firstElementChild);
+// itemList.firstElementChild.textContent = 'hello world';
+
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent = 'hello world';
+
+
+// console.log(itemList.nextElementSibling)
+// console.log(itemList.previousElementSibling)
+// itemList.previousElementSibling.style.color ='green';
+
