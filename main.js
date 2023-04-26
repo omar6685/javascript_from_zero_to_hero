@@ -1,14 +1,21 @@
-const fruits = ['apples', 'banana', 'cherry', 'cherry']
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+    hobbies: ['music', 'history', 'sports'],
+    address: {
+        street: '123 main St',
+        city: 'San Francisco',
+        state: 'CA',
+        zipcode: '94107'
+    }
+}
 
-
-console.log(fruits);
-
-console.log(fruits[1])
-
-console.log(fruits[2])
-fruits[3] = 'banana'
-fruits.push('mangos')
-fruits.unshift('strawberry');
-fruits.pop();
-console.log(Array.isArray(fruits))
-console.log(fruits.indexOf('cherry'))
+console.log(person);
+console.log(person.firstName,person.lastName);
+console.log(person.hobbies[1]);
+console.log(person.address.city)
+const { firstName, lastName, address: {city}} = person;
+console.log(city)
+person.email = 'foo@bar.com';
+console.log(person);
