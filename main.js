@@ -1,9 +1,13 @@
-console.log(document.getElementById('my-form'));
-console.log(document.querySelector('.container'));
+const ul = document.querySelector('.items');
 
 
+// ul.remove();
 
-//console.log(document.querySelectorAll('.item'));
+// ul.lastElementChild.remove();
+ul.firstElementChild.textContent = 'hello';
+ul.children[1].innerText = 'hello';
+ul.lastElementChild.innerHTML = '<h4>Hello</h4';
 
-const items = document.querySelectorAll('.item');
-items.forEach((item) => console.log(item));
+
+const btn = document.querySelector('.btn');
+btn.style.background = 'red';
