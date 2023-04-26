@@ -101,23 +101,37 @@ var itemList = document.querySelector('#items');
 // console.log(itemList.previousElementSibling)
 // itemList.previousElementSibling.style.color ='green';
 
-var newDiv = document.createElement('div');
+// var newDiv = document.createElement('div');
 
-newDiv.className = 'hello';
+// newDiv.className = 'hello';
 
-newDiv.id = 'hello';
+// newDiv.id = 'hello';
 
-newDiv.setAttribute('title', 'Hello');
+// newDiv.setAttribute('title', 'Hello');
 
-var newDivText = document.createTextNode('hello');
+// var newDivText = document.createTextNode('hello');
 
-newDiv.appendChild(newDivText);
+// newDiv.appendChild(newDivText);
 
-var container = document.querySelector('header .container');
-var h1 = document.querySelector('header .h1');
+// var container = document.querySelector('header .container');
+// var h1 = document.querySelector('header .h1');
 
-console.log(newDiv);
+// console.log(newDiv);
 
-newDiv.style.fontSize ='30px'
+// newDiv.style.fontSize ='30px'
 
-container.insertBefore(newDiv, h1);
+// container.insertBefore(newDiv, h1);
+
+var button = document.getElementById('button').addEventListener
+('click', buttonClick);
+
+function buttonClick(e) {
+//     document.getElementById('header-title').textContent = 'title' ;
+//     document.querySelector('#main').style.backgroundColor = '#f4f4f4';
+//   console.log(e);
+     console.log(e.target);
+     console.log(e.target.id);
+     console.log(e.target.className);
+     var output = document.getElementById('output');
+     output.innerHTML = '<h3>'+e.target.id+'</h3>';
+}
