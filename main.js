@@ -1,26 +1,38 @@
-const x = 6;
-const y = 11;
+/*const addNums = (num1, num2) =>  num1 + num2;
 
-if(x > 5 && y > 10) {
-    console.log('x > 10 and y > 10');
-} else if(x>10) {
-    console.log('x is greater than 10')
+
+console.log(addNums(1, 2));
+
+function Person(firstName, lastName, age) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = new Date(age);
 }
-else {
-    console.log('x is less 10')
+Person.prototype.getBirthYear = function() {
+    return this.age.getFullYear();
+}
+Person.prototype.getFullName = function() {
+    return `${this.firstName} ${this.lastName}`;
+}*/
+
+class Person {
+    constructor(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = new Date(age);
+    }
+    getBirthYear() {
+        return this.age.getFullYear();
+    }
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
 }
 
-const r = 10;
-const color = r > 10? 'red' : 'green';
-console.log(color);
 
-switch(color) {
-    case'red':
-        console.log('color is red');
-        break;
-    case 'green':
-        console.log('color is green');
-        break;
-    default:
-        console.log('color is not red or green');
-}
+
+const person1 = new Person('john', 'John', '4-2-1999');
+const person2 = new Person('jane', 'Jane', '4-2-1999');
+console.log(person2.getFullName())
+console.log(person1)
+console.log(person2.getBirthYear())
