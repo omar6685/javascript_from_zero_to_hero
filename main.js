@@ -1,6 +1,9 @@
-const age =19 
+const name = 'john';
+const age = 20;
+const isCool = true;
+const rating = 4.3;
+const x =null;
+const y = undefined;
+let z;
 
-let score;
-score = 20
-console.log(score);
-console.log(age);
+console.log(typeof age);
