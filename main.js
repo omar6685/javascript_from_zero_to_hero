@@ -1,10 +1,14 @@
-const s= 'hello world';
-console.log(s.length);
-console.log(s.toUpperCase());
-console.log(s.toLowerCase());
-console.log(s.substring(0, 5));
-console.log(s.substring(0, 5).toLocaleUpperCase());
+const fruits = ['apples', 'banana', 'cherry', 'cherry']
 
-const a = 'omar , ali, ahmed'
-console.log(a.split(', '))
 
+console.log(fruits);
+
+console.log(fruits[1])
+
+console.log(fruits[2])
+fruits[3] = 'banana'
+fruits.push('mangos')
+fruits.unshift('strawberry');
+fruits.pop();
+console.log(Array.isArray(fruits))
+console.log(fruits.indexOf('cherry'))
