@@ -101,3 +101,23 @@ var itemList = document.querySelector('#items');
 // console.log(itemList.previousElementSibling)
 // itemList.previousElementSibling.style.color ='green';
 
+var newDiv = document.createElement('div');
+
+newDiv.className = 'hello';
+
+newDiv.id = 'hello';
+
+newDiv.setAttribute('title', 'Hello');
+
+var newDivText = document.createTextNode('hello');
+
+newDiv.appendChild(newDivText);
+
+var container = document.querySelector('header .container');
+var h1 = document.querySelector('header .h1');
+
+console.log(newDiv);
+
+newDiv.style.fontSize ='30px'
+
+container.insertBefore(newDiv, h1);
