@@ -1,48 +1,26 @@
-const todos = [
-    {
-        id: 1,
-        text: 'Learn JavaScript',
-        isCompleted: false
-    },
-    {
-        id: 2,
-        text: 'Learn React',
-        isCompleted: true
-    },
-    {
-        id: 3,
-        text: 'Learn Redux',
-        isCompleted: false
-    }
-]
+const x = 6;
+const y = 11;
 
-for(let i = 0; i < 10; i++) {
-    console.log(`for loop number ${i}`);
+if(x > 5 && y > 10) {
+    console.log('x > 10 and y > 10');
+} else if(x>10) {
+    console.log('x is greater than 10')
+}
+else {
+    console.log('x is less 10')
 }
 
+const r = 10;
+const color = r > 10? 'red' : 'green';
+console.log(color);
 
-let i = 0;
-while(i < 10) {
-    console.log(`while loop number ${i}`);
-    i++;
+switch(color) {
+    case'red':
+        console.log('color is red');
+        break;
+    case 'green':
+        console.log('color is green');
+        break;
+    default:
+        console.log('color is not red or green');
 }
-
-for(let i = 0; i < todos.length; i++) {
-    console.log(todos[i].text);
-}
-
-for(let todo of todos) {
-    console.log(todo.text);
-}
-
-todos.forEach(function(todo) {
-    console.log(todo.id);
-});
-
-const todoCompleted = todos.filter(function(todo) {
-    return todo.isCompleted == true;
-}).map(function(todo) {
-    return  todo.text; 
-})
-
-console.log(todoCompleted);
