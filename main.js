@@ -1,21 +1,22 @@
-const person = {
-    firstName: 'John',
-    lastName: 'Doe',
-    age: 30,
-    hobbies: ['music', 'history', 'sports'],
-    address: {
-        street: '123 main St',
-        city: 'San Francisco',
-        state: 'CA',
-        zipcode: '94107'
+const todos = [
+    {
+        id: 1,
+        text: 'Learn JavaScript',
+        isCompleted: false
+    },
+    {
+        id: 2,
+        text: 'Learn React',
+        isCompleted: true
+    },
+    {
+        id: 3,
+        text: 'Learn Redux',
+        isCompleted: false
     }
-}
+]
 
-console.log(person);
-console.log(person.firstName,person.lastName);
-console.log(person.hobbies[1]);
-console.log(person.address.city)
-const { firstName, lastName, address: {city}} = person;
-console.log(city)
-person.email = 'foo@bar.com';
-console.log(person);
+console.log(todos[1].text)
+
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON)
