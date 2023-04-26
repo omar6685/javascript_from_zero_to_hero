@@ -1,3 +1,6 @@
-console.log('hello');
-console.error('hello');
-console.warn('hello');
+const age =19 
+
+let score;
+score = 20
+console.log(score);
+console.log(age);
