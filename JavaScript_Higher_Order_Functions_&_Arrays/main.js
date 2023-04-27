@@ -46,3 +46,12 @@ const companyNames = companies.map(function(Company){
 })
 
 console.log(companyNames);
+
+const sortCompanies = companies.sort((a, b) => (a.start > b.end ? 1 : -1));
+
+console.log(sortCompanies);
+
+
+const sortAges = ages.sort((a, b) => (a - b));
+
+console.log(sortAges);
