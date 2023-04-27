@@ -71,15 +71,15 @@
 // console.log(mag1)
 
 
-const bookProtos = {
-    getSummary: function() {
-        return `${this.title} - ${this.author} - ${this.year}`;
-    },
-    getAge: function() {
-        const years = new Date().getFullYear() - this.year;
-        return `${this.title} is ${years} years old`;
-    }
-}
+// const bookProtos = {
+//     getSummary: function() {
+//         return `${this.title} - ${this.author} - ${this.year}`;
+//     },
+//     getAge: function() {
+//         const years = new Date().getFullYear() - this.year;
+//         return `${this.title} is ${years} years old`;
+//     }
+// }
 
 // const book1 = Object.create(bookProtos);
 // book1.title = 'The Hobbit';
@@ -87,10 +87,34 @@ const bookProtos = {
 // book1.year = '1984';
 
 
-const book1 = Object.create(bookProtos,{
-    title: {value: 'The Hobbit'},
-    author: {value: 'J.R.R. Tolkien'},
-    year: {value: '1984'}
-});
+// const book1 = Object.create(bookProtos,{
+//     title: {value: 'The Hobbit'},
+//     author: {value: 'J.R.R. Tolkien'},
+//     year: {value: '1984'}
+// });
+
+// console.log(book1)
+
+
+class Book {
+    constructor(title, author, year) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+    }
+    getSummary() {
+        return `${this.title} - ${this.author} - ${this.year}`;
+    }
+    getAge() {
+        const years = new Date().getFullYear() - this.year;
+        return `${this.title} is ${years} years old`;
+    }
+    revise(newYear) {
+        this.year = newYear;
+        this.revised = true;
+    }
+}
+
+const book1 = new Book('The Hobbit', 'omar', '2001');
 
 console.log(book1)
