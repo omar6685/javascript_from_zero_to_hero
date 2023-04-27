@@ -18,7 +18,26 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //     console.log(companies[i]);
 // }
 
-companies.forEach(function(Company){
+// companies.forEach(function(Company){
 
-    console.log(Company);
-});
+//     console.log(Company);
+// });
+
+
+const canDrink = ages.filter(age => age >= 21);
+
+// console.log(canDrink);
+
+const retailCompanies = companies.filter(campany => campany.category === 'Retail');
+
+
+console.log(retailCompanies);
+
+const startCompanies = companies.filter(campany => campany.start >= 1980 & campany.start <= 1989 )
+
+
+console.log(startCompanies);
+
+const tenYears = companies.filter(campany => (campany.end - campany.start ) >= 10 );
+
+console.log(tenYears);
