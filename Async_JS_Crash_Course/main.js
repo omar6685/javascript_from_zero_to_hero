@@ -14,13 +14,32 @@ function getPosts() {
 }
 
 
-function createPosts(post, callback) {
+function createPosts(post) {
+    return new Promise((resolve, reject) => {
     setTimeout(() => {
         post.push(post);
-        callback(post);
+        const error = false;
+        if (!error) {
+            reject();
+        } else {
+            resolve('something wrong happened');
+        }
     }, 2000);
+    });
+
+
 }
 
-getPosts();
 
-createPost({title: 'post three', body: 'this is post'})
+// createPosts({title: 'post three', body: 'post three'}).then(getPosts).catch(error => console.log(error));
+
+
+// getPosts();
+
+// createPost({title: 'post three', body: 'this is post'})
+
+
+const promise1 = Promise.reject('hellow world');
+
+const promise2 = Promise.resolve('hello world');
+const promise3 = 10;
