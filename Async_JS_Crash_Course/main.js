@@ -39,7 +39,22 @@ function createPosts(post) {
 // createPost({title: 'post three', body: 'this is post'})
 
 
-const promise1 = Promise.reject('hellow world');
+// const promise1 = Promise.reject('hellow world');
 
-const promise2 = Promise.resolve('hello world');
-const promise3 = 10;
+// const promise2 = Promise.resolve('hello world');
+// const promise3 = 10;
+
+
+async function init() {
+    await createPost({ title: 'hello world', body: 'this is post'});
+    getPosts();
+}
+
+init();
+
+async function fechUser() {
+    const res = await res.json();
+    console.log(date);
+}
+
+fechUser();
