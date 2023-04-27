@@ -41,3 +41,8 @@ console.log(startCompanies);
 const tenYears = companies.filter(campany => (campany.end - campany.start ) >= 10 );
 
 console.log(tenYears);
+const companyNames = companies.map(function(Company){
+    return Company.name;
+})
+
+console.log(companyNames);
