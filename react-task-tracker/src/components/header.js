@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import Button from "./button"
+import Button from "./Button"
 
 
 const Header = ({ title }) => {
@@ -15,8 +15,8 @@ Header.defaultProps = {
     title: 'Task Tracker',
 }
 
-Header.prototypes = {
-    title: prototypes.string.isRequired,
+Header.propTypes = {
+    title: PropTypes.string.isRequired,
 }
 
 export default Header
